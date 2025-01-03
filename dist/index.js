@@ -13,12 +13,6 @@ Object.defineProperty(module.exports, "MapContainer", {
         return $904796ae67398d60$exports.MapContainer;
     }
 });
-Object.defineProperty(module.exports, "MapContext", {
-    enumerable: true,
-    get: function() {
-        return $3a20b070388d5fe9$exports.MapContext;
-    }
-});
 Object.defineProperty(module.exports, "Marker", {
     enumerable: true,
     get: function() {
@@ -29,6 +23,12 @@ Object.defineProperty(module.exports, "TileLayer", {
     enumerable: true,
     get: function() {
         return $d768e11e1032442e$exports.TileLayer;
+    }
+});
+Object.defineProperty(module.exports, "useMapContext", {
+    enumerable: true,
+    get: function() {
+        return $4e64a59ea718de66$exports.useMapContext;
     }
 });
 var $904796ae67398d60$exports = {};

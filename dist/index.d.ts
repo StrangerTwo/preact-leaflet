@@ -1,9 +1,6 @@
+import { h, RefObject, ComponentChildren } from "preact";
 import * as Leaflet from "leaflet";
-import { Context, h, RefObject, ComponentChildren } from "preact";
-interface MapContextProps {
-    map: Leaflet.Map | null;
-}
-export const MapContext: Context<MapContextProps>;
+import { Map } from "leaflet";
 interface MapContainerProps {
     ref?: RefObject<HTMLDivElement>;
     center: Leaflet.LatLngExpression;
@@ -15,6 +12,9 @@ interface MapContainerProps {
     style?: h.JSX.CSSProperties | undefined;
 }
 export const MapContainer: ({ ref, center, zoom, children, containerId, options, height, style, }: MapContainerProps) => h.JSX.Element;
+export const useMapContext: () => {
+    map: Map | null;
+};
 interface MarkerProps {
     position: Leaflet.LatLngExpression;
     icon?: Leaflet.Icon | Leaflet.DivIcon | undefined;
