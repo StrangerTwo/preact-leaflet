@@ -1,7 +1,6 @@
 .cache
 .parcel-cache
 coverage
-dist
 dist-demo
 node_modules
 
